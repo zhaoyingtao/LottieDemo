@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="siam.json"
+                app:lottie_imageAssetsFolder="siamCat/"
+                app:lottie_loop="true" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="bird2.json"
+                app:lottie_loop="true" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/bird1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="通过URL直接加载" />
+
+            <Button
+                android:id="@+id/stop_urlA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="暂停下面的动画播放" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="300dp"
+                android:layout_height="300dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="加载assets文件中图（带图片的）" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view01"
+                android:layout_width="300dp"
+                android:layout_height="300dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="加载assets文件中图" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view02"
+                android:layout_width="300dp"
+                android:layout_height="300dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="加载raw中的文件" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view03"
+                android:layout_width="300dp"
+                android:layout_height="300dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="加载手机中的file文件" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view04"
+                android:layout_width="300dp"
+                android:layout_height="300dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="加载手机中的file文件（带图片）" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view05"
+                android:layout_width="300dp"
+                android:layout_height="300dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
